@@ -61,12 +61,15 @@ if(name == "")
 else{
     player ={ username:name, Highscore:0};
 }  
-
+resetScore();
+updateHighScore(currentScore);
+options.classList.remove("clicked");
 landingPage.classList.add("hide");
-getQuestions();
 questionPage.classList.remove("hide");
 quizScores.classList.remove("hide");
-options.classList.remove("clicked");
+
+getQuestions();
+
 
 }
 
