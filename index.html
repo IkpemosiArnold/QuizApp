@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Karla&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    
+
+        <title>
+           Home - youSabi?
+        </title>
+
+    </head>
+    <body>
+        <div class="container">
+            <h1 class="sabiHeader" style="text-align: center;">youSabi?</h1>
+            <!----------LANDING SECTION start---------->
+            <div id="landingPage" style="text-align: center;">  
+                <h3 class="sabiSubtext">Do you think you know things ? Take this quiz to find out</h3>
+                <div id="name-form" >
+                    <h4 class="sabiText">Enter a username to start</h4>
+                    
+                    <input type="text" id="inputName"  type="text" placeholder="e.g. Liquid Metal" />
+                    </br>
+                    <button  id="start" class="btn">Start</button>
+                </div>
+            </div>
+            <!----------LANDING SECTION End---------->
+
+            <!------------QUESTIONS SECTION start--------->
+            <div id="quizScores" class="hide"> 
+                <div id="currentScore">
+                <p>Current score: <span id="cScore"></span></p>
+                 </div> 
+                 <div id="highScore">
+                <p>High score: <span id="hScore"></span></p>
+                 </div>
+             </div>
+            <div id="questionPage" class="hide" style="text-align: center;">
+              
+                
+                <p id="question"></p>
+                <div id="options"></div>
+                <button class="next btn hide" id="next">Next</button>
+
+            </div>
+             <!------------QUESTIONS SECTION end--------->
+
+              <!------------GAME OVER SECTION start--------->
+              <div id="donePage" class="hide">
+                <div id="scoreBanner">
+                  <p id="sbText">
+                  
+                  </p>
+                </div>
+                <div id="goButtons">
+                    <button class="replay btn " id="replay">Replay</button>
+                 
+                </div>
+              </div>
+        </div>
+        <script src="trivia.js"></script>
+    </body>
+</html>

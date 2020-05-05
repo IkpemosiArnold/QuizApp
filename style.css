@@ -1,0 +1,142 @@
+* {
+    box-sizing: border-box;
+}
+html,body{
+    margin:0;
+    width: 100%;
+    overflow-x: hidden;
+    background-color: #f1f9f9;
+}
+.container {
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+.sabiHeader{
+    font-size: 3em;
+    font-family: 'Fredoka One', cursive;
+    color:#527A7A;
+}
+.sabiSubtext{
+    font-size: 20px;
+    font-family: 'Karla', sans-serif;
+    color:#777A7A;
+}
+.sabiText{
+    font-family: 'Karla', sans-serif;
+    color:#777A7A;
+}
+#inputName{
+    border-top:0px;
+    border-right: 0px;
+    border-bottom: 2px solid #547294;
+    border-left: 0px;
+    background-color: #f1f9f9;
+}
+#inputName :focus{
+    background: transparent;
+    border-top:0px;
+    border-right: 0px;
+    border-bottom: 2px solid #50d890;
+    border-left: 0px;
+}
+.btn{
+    margin: 10px auto;
+    padding: 10px;
+    border: 1px solid #547294;
+    border-radius: 5px 5px 5px 5px ;
+    color: #547294;
+    background-color:#f1f9f9;
+    font-size: 1em;
+  
+}
+
+
+
+/*------------------Questions Section-------------*/
+#questionPage{
+    display: flex;
+    flex-direction: column;
+}
+#quizScores{
+  font-size: 1.2em;
+  font-family: 'Karla', sans-serif;
+  display: flex;
+  align-items: center;
+  width: 80%;
+  justify-content: space-between;
+}
+#cScore,#hScore{
+    font-weight: bold;
+    color: #393B3B;
+}
+
+#question{
+    font-size: 1.2em;
+    font-family: 'Karla', sans-serif;
+}
+#options{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    width: auto;
+}
+.optionBtn{
+    margin: 5px;
+    padding: 5px;
+    min-width: 200px;
+    max-width: 300px;
+    text-align: center;
+    border: 1px solid #393B3B;
+    border-radius: 5px 5px 5px 5px ;
+    color: #393B3B;
+    background-color:#f1f9f9;
+    font-size: 1em;
+}
+.optionBtn:hover{
+    
+    transform: scale(1.2);
+}
+/*------------------End Section-----------------*/
+#donePage{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+   
+  }
+#sbText{
+    font-size: 1.2em;
+    font-family: 'Karla', sans-serif;
+}
+
+/*------------------Controls------------------*/
+.hide {
+    display: none !important;
+  }
+.clicked{
+    pointer-events: none;
+}
+.correct {
+    background-color: #8fdba1;
+    border: 1px solid #8fdba1;
+    color: white;
+  }
+.incorrect {
+    background-color: #c55e68;
+    border: 1px solid #c55e68;
+    color: white;
+} 
+/*--------------Media Queries--------------*/
+@media (min-width: 780px) {
+    #quizScores{
+        width:400px;
+      }
+  }
